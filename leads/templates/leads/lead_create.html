@@ -1,12 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Lead details</title>
-</head>
-<body>
+{% extends 'base.html' %}
 
-<a href="/leads">Go back to leads</a>
+{% block content %}
+<a href="{% url 'leads:lead-list' %}">Go back to leads</a>
 <hr>
 
 <h1>Create a new lead</h1>
@@ -20,5 +15,4 @@
 
 </form>
 
-</body>
-</html>
+{% endblock content %}
